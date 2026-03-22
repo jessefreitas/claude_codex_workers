@@ -7,7 +7,7 @@ O Reviewer valida e aprova via Claude Code CLI — sem custo adicional de API.
 
 ## Como funciona
 
-```
+```text
 sua tarefa
   └→ Worker (GitHub Models / o4-mini)   ← geração barata e paralela
        └→ Reviewer (Claude Code CLI)    ← validação inteligente
@@ -104,7 +104,7 @@ decisao = reviewer.decide(
 ## Modelos disponíveis
 
 | Modelo | Perfil |
-|---|---|
+| --- | --- |
 | `o4-mini` | **Melhor para código** — raciocínio interno (padrão) |
 | `o3` | Mais poderoso, mais lento |
 | `gpt-4.1` | Rápido, sem raciocínio, bom para tasks simples |
@@ -112,7 +112,7 @@ decisao = reviewer.decide(
 
 ## Estrutura
 
-```
+```text
 orchestrator/
 ├── config.py        # Configuração e env vars
 ├── worker.py        # Worker via GitHub Models API
@@ -128,7 +128,7 @@ PREREQUISITES.md     # Dependências do sistema
 Comparando 1.000 tasks/mês versus usar apenas Claude Sonnet:
 
 | Abordagem | Custo estimado |
-|---|---|
+| --- | --- |
 | 100% Claude Sonnet | ~$33/mês |
 | Worker (o4-mini) + Reviewer (Claude CLI) | ~$7–15/mês |
 | **Economia** | **56–80%** |

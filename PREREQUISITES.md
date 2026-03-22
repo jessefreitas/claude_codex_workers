@@ -20,9 +20,14 @@ claude --version
 
 > Requer conta Anthropic com acesso ao Claude Code.
 
-## 3. GitHub Personal Access Token (Worker)
+## 3. GitHub Pro (obrigatorio para GitHub Models)
 
-O Worker usa o GitHub Models API. Gere um token em:
+O Worker usa o **GitHub Models API**, que exige uma conta **GitHub Pro** (ou superior: Team, Enterprise, Copilot Business/Enterprise).
+
+> Contas GitHub Free **nao tem acesso** ao GitHub Models.
+> Assine em: `https://github.com/settings/billing`
+
+Apos ter o plano Pro, gere um Personal Access Token em:
 `https://github.com/settings/tokens` → **Fine-grained token** com permissao `models:read`.
 
 ## 4. Dependencias Python
@@ -48,7 +53,7 @@ WORKER_MODEL=o4-mini   # opcional, este e o padrao
 ## Modelos disponiveis (GitHub Models)
 
 | Modelo | Perfil |
-|---|---|
+| --- | --- |
 | `o4-mini` | Melhor para codigo (padrao) |
 | `o3` | Mais poderoso, mais lento |
 | `gpt-4.1` | Rapido, sem raciocinio |
