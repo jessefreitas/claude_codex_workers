@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Setup: Criar venv e instalar dependências",
+            "type": "shell",
+            "command": "python -m venv .venv && .venv/Scripts/pip install -e .",
+            "group": "build",
+            "presentation": { "reveal": "always", "panel": "shared" },
+            "problemMatcher": []
+        },
+        {
+            "label": "Rodar exemplo",
+            "type": "shell",
+            "command": ".venv/Scripts/python example.py",
+            "group": { "kind": "test", "isDefault": true },
+            "presentation": { "reveal": "always", "panel": "shared" },
+            "problemMatcher": []
+        },
+        {
+            "label": "Instalar pacote da VPS (pip install git+github)",
+            "type": "shell",
+            "command": "pip install git+https://github.com/jessefreitas/claude_codex_workers.git",
+            "group": "build",
+            "presentation": { "reveal": "always", "panel": "shared" },
+            "problemMatcher": []
+        }
+    ]
+}
