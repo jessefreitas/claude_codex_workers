@@ -1,0 +1,6 @@
+# GitHub Models API (Worker) + Claude API (opcional)
+anthropic>=0.40.0
+openai>=1.50.0
+
+# Variaveis de ambiente
+python-dotenv>=1.0.0
