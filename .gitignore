@@ -1,10 +1,41 @@
+# Ambiente
 .env
+.env.local
+.env.*.local
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
+.Python
+
+# Venv
 .venv/
 venv/
-.vscode/launch.json
+env/
+
+# Build / packaging
 *.egg-info/
+*.egg
 dist/
 build/
+*.whl
+
+# IDE
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testes / cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
